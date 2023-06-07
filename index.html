@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="img/descarga.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     
 </head>
 
 <body>
     <div class="container">
+        <img class="logoInicial" src="img/Logo.png" alt="Logo alura">
         <div class="encriptar">
             <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
                 placeholder="Ingrese el texto aquí"></textarea>
@@ -24,16 +26,25 @@
                 <button class="botonEncriptador" type="button" onclick="encriptar()">
                     Encriptar
                 </button>
-                <button class="botonDesencriptar" type="button" onclick="desenencriptar()">
+                <button class="botonDesencriptar" type="button" onclick="desencriptar()">
                     Desencriptar
                 </button>
             </div>
         </div>
         <div class="encriptado">
             <img src="img/Muñeco.png" alt="Muñeco" id="muñeco">
+            <div class="textoEncriptado">
+                <h2 id="titulo-encriptado"></h2>
+                <p  id="parrafoTextoEncriptado"></p>
+            </div>
             <div class="mensaje-encriptado" id="mensaje-encriptado">
                 <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
                 <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="botonCopiar">
+                <button class="copiar" id="copiar" type="button" onclick="copiar()">
+                    Copiar
+                </button>
             </div>
         </div>
     </div>
