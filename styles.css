@@ -357,26 +357,18 @@
         border-radius: 16px;
     }
 
-    .botonEncriptador:hover,
-    .botonDesencriptar:hover, .copiar:hover {
-
-        margin: 0.3%;
-        width: 36%;
-        padding: 1.8%;
-    }
-
-    .botonEncriptador:active, .copiar:active {
+    .botonEncriptador:active {
 
         background-color: #f3f5fc;
         color: #0a3871;
-        transition: 0s;
+        transition: 1s;
     }
 
-    .botonDesencriptar:active {
+    .botonDesencriptar:active, .copiar:active {
 
         background-color: #0a3871;
         color: #f3f5fc;
-        transition: 0s;
+        transition: 1s;
     }
 
     .encriptado {
@@ -400,5 +392,16 @@
         visibility: hidden;
     }
 
+    .botonCopiar{
+
+        top: 90%;
+        left: 0%;
+
+    }
+
+    .copiar{
+
+        width: 100%;
+    }
 
 }
